@@ -74,6 +74,23 @@
             height: 100%;
             width: 100%;
         }
+         .frosted-glass {
+        background: rgba(255, 255, 255, 0.042);
+        /* Semi-transparent white */
+        backdrop-filter: blur(10px);
+        /* Apply blur effect */
+        -webkit-backdrop-filter: blur(10px);
+        /* For Safari support */
+        border: 1px solid rgba(255, 255, 255, 0.23);
+        /* Subtle border */
+        border-radius: 15px;
+        /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Soft shadow */
+        padding: 20px;
+        /* Inner spacing */
+
+    }
     </style>
     <script>
         $(document).ready(function () {
@@ -400,7 +417,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3  p-3 mb-2" ng-repeat="obj in jsonArray">
-                    <div class="card" style="box-shadow: 3px 3px 30px rgb(58, 58, 58);">
+                    <div class="card frosted-glass" style="box-shadow: 3px 3px 30px rgb(58, 58, 58);">
 
                         <h5 class="card-title fs-3"
                             style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
